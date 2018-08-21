@@ -7,8 +7,8 @@ It is kept in the local terraform.tfstate file
 ```
 # How to use:
  terraform get
- terraform plan -var-file="../root.tfvars"
- terraform apply -var-file="../root.tfvars"
+ terraform plan -var-file="../terraform.tfvars"
+ terraform apply -var-file="../terraform.tfvars"
 ```
 
 If you receive this error

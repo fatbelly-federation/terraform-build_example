@@ -5,7 +5,7 @@
 
 module "pre-init" {
   #source                     = "../../../terraform-modules/aws//pre-init"
-  source                     = "github.com/fatbelly-federation/terraform-modules/aws//pre-init"
+  source                     = "github.com/fatbelly-federation/tfm_pre-init"
 
   # we read in variable values from ../terraform.tfvars
   # and use them to set values for the variables the modules is expecting

@@ -1,0 +1,6 @@
+debug.tmp
+terraform.log
+*~
+.terraform
+.idea/
+.terragrunt-cache/

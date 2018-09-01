@@ -7,7 +7,7 @@ terragrunt = {
   # Apply the code in the consul module
   terraform {
     #source = "../../../../terraform-modules/aws/security/keypair/" # uncomment for local development
-    source = "github.com/fatbelly-federation/tfm_keypair"
+    source = "github.com/fatbelly-federation/tfm_keypair?ref=v1.0.0"
     extra_arguments "global_vars" {
       commands = [
         "apply",

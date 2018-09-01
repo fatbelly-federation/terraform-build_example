@@ -2,7 +2,7 @@
 
 # Declare the vpc_name here to help other 
 # bits know they are making changes in the right VPC
-vpc_name = "jolly-vpc"
+vpc_name = "jolly_vpc"
 
 # Availability Zones for VPC and VPN
 # we'll default to letting terraform pick the AZs for us
@@ -25,7 +25,7 @@ vpc_cidr_block = "172.16.8.0/21"
 # we define a default snapshot_lifetime here but it can over-rode
 # in a lower-level tfvars.
 tags = {
-  "vpc"               = "jolly-vpc"
+  "vpc"               = "jolly_vpc"
   "snapshot_lifetime" = "8 days"
   "build_url"         = "https://github.com/fatbelly-federation/terraform-build_example"
 }

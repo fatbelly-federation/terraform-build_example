@@ -70,4 +70,10 @@ backup_state_region         = "us-west-2"
 # we set it here as a fail-safe
 region = "us-east-1"
 
-
+# try apply at least these tags
+# this variable will be combined with lower-level tags defines
+# e.g. tags defined within us-east-2/region-common.tfvars
+tags = {
+  "billing_project"   = "build_example"
+  "billing_account"   = "aws_fb_12345"
+}

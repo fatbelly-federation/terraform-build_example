@@ -1,5 +1,9 @@
-# this is the root.tfvars for aws
-# this where we set useful universal defaults
+# this is the root terraform.tfvars for aws
+# you can run `terragrunt plan-all` and `terragrunt apply-all`
+# to build *everything* contained with the _aws_ directory structure
+
+# this is also where we set useful universal defaults
+# and define the bits for remote state tracking
 
 terragrunt = {
 

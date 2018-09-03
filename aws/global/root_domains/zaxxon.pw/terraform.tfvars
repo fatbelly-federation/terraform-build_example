@@ -5,8 +5,8 @@ terragrunt = {
   }
 
   terraform {
-    #source = "../../../../../modules//tfm_route53/toplevel_domain" # uncomment for local development
-    source = "github.com/fatbelly-federation/tfm_route53//toplevel_domain"
+    #source = "../../../../../modules//tfm_aws_route53/toplevel_domain" # uncomment for local development
+    source = "github.com/fatbelly-federation/tfm_aws_route53//toplevel_domain"
     extra_arguments "global_vars" {
       commands = [
         "apply",

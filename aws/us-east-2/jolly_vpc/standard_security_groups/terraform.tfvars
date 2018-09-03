@@ -6,8 +6,8 @@ terragrunt = {
 
   # Apply the code in the consul module
   terraform {
-    #source = "../../../../../modules/tfm_security_groups"  # uncomment for local development
-    source = "github.com/fatbelly-federation/tfm_security_groups?ref=v1.0.0"
+    #source = "../../../../../modules/tfm_aws_security_groups"  # uncomment for local development
+    source = "github.com/fatbelly-federation/tfm_aws_security_groups?ref=v1.0.0"
     extra_arguments "global_vars" {
       commands = [
         "apply",

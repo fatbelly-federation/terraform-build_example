@@ -7,7 +7,7 @@ terragrunt = {
   # Apply the code in the consul module
   terraform {
     #source = "../../../../../modules/tfm_aws_security_groups"  # uncomment for local development
-    source = "github.com/fatbelly-federation/tfm_aws_security_groups?ref=v1.0.0"
+    source = "github.com/fatbelly-federation/tfm_aws_security_groups?ref=v1.0.1"
     extra_arguments "global_vars" {
       commands = [
         "apply",
@@ -35,6 +35,9 @@ terragrunt = {
 
 # set some security group specific tags
 tags = {
-  "sg_version" = "20180901"
+  "tfm_module_version"  = "v1.0.1"
+  "tfm_module"          = "github.com/fatbelly-federation/tfm_aws_security_groups"
+  "build_date"          = "2018-Sep-04"
+  "build_path"          = "terraform-build_example/aws/us-east-2/jolly_vpc/standard_security_groups"
 }
 

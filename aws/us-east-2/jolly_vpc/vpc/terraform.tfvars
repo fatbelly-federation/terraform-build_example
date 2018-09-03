@@ -54,3 +54,11 @@ map_public_ip_on_launch = "false"
 enable_dhcp_options = true
 dhcp_options_domain_name = "jolly.zaxxon.pw"
 
+# set required tags
+tags = {
+  "tfm_module_version"  = "v1.0.1"
+  "tfm_module"          = "github.com/fatbelly-federation/tfm_aws_vpc"
+  "build_date"          = "2018-Sep-01"
+  "build_path"          = "terraform-build_example/aws/us-east-2/jolly_vpc/vpc"
+}
+

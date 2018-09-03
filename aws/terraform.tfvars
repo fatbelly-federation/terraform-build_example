@@ -73,6 +73,11 @@ region = "us-east-1"
 # try apply at least these tags
 # this variable will be combined with lower-level tags defines
 # e.g. tags defined within us-east-2/region-common.tfvars
+#
+# you can use the global tag editor at
+# https://resources.console.aws.amazon.com/r/tags
+# find both tagged and untagged resources
+#
 tags = {
   # useful billing codes to should be applied to everything
   "billing_project"     = "build_example"

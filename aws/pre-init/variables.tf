@@ -30,3 +30,11 @@ variable "dynamodb_table" {
   description = "The name of the dynamodb table used for locking"
 }
 
+variable "tags" {
+  type = "map"
+  description = "map(list) of tags to add to everything we create with this module"
+  default = {
+    "terraform" = "true"
+  }
+}
+

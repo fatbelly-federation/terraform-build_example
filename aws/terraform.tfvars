@@ -74,6 +74,15 @@ region = "us-east-1"
 # this variable will be combined with lower-level tags defines
 # e.g. tags defined within us-east-2/region-common.tfvars
 tags = {
-  "billing_project"   = "build_example"
-  "billing_account"   = "aws_fb_12345"
+  # useful billing codes to should be applied to everything
+  "billing_project"     = "build_example"
+  "billing_account"     = "aws_fb_12345"
+  # useful reference tag to pointing the repo used to build out this environment
+  "build_url"           = "https://github.com/fatbelly-federation/terraform-build_example"
+  # lower level tfvars will set proper values for these tags
+  # if they are missing, the default values here are easy to spot in a terragrunt plan
+  "tfm_module"          = "!!! MISSING !!! ADD URL !!!"
+  "tfm_module_version"  = "!!! MISSING !!! ADD MODULE VERSION !!!"
+  "build_date"          = "!!! MISSING !!! ADD DATE !!! YYYY-MMM-DD e.g. 2018-Sep-03 !!!"
+  "build_path"          = "!!! MISSING !!! ADD DIR PATH !!!"
 }

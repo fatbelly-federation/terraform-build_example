@@ -27,6 +27,5 @@ vpc_cidr_block = "172.16.8.0/21"
 tags = {
   "vpc"               = "jolly_vpc"
   "snapshot_lifetime" = "8 days"
-  "build_url"         = "https://github.com/fatbelly-federation/terraform-build_example"
 }
 

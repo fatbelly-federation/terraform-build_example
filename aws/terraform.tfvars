@@ -94,4 +94,6 @@ tags = {
   "tfm_module_version"  = "!!! MISSING !!! ADD MODULE VERSION !!!"
   "build_date"          = "!!! MISSING !!! ADD DATE !!! YYYY-MMM-DD e.g. 2018-Sep-03 !!!"
   "build_path"          = "!!! MISSING !!! ADD DIR PATH !!!"
+  "build_ticket"        = "!!! MISSING !!! ADD BUILD_TICKET !!!"
+  "resource_owner"      = "!!! MISSING !!! ADD RESOURCE_OWNER !!!"
 }

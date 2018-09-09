@@ -9,6 +9,9 @@ vpc_name = "jolly_vpc"
 # to specify which AZs to use the vpc_azs variable to supply a list of AZs
 # vpc_azs = ["us-east-1a", "us-east-1c"]
 
+# default domain name for this vpc
+default_domain_name = "jolly.zaxxon.pw"
+
 # vpc cidr
 # useful IPv4 subnetting references
 # http://www.opus1.com/o/notes_subnet.html
@@ -27,5 +30,7 @@ vpc_cidr_block = "172.16.8.0/21"
 tags = {
   "vpc"               = "jolly_vpc"
   "snapshot_lifetime" = "8 days"
+  "build_ticket"      = "build_example-jolly_vpc"
+  "resource_owner"    = "ops@dev.null"
 }
 
